@@ -26,8 +26,8 @@ metadata:
     env: marvel
 spec:
   containers:
-  - image: nigelpoulton/k8sbook:shield-01
-    name: bus-ctr
+  - name: bus-ctr
+    image: nginx:alpine
     ports:
     - containerPort: 8080
     imagePullPolicy: Always
