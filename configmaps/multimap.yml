@@ -1,7 +1,12 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: multimap
+  name: cm2
 data:
-  given: Nigel
-  family: Poulton
+  test.conf: |
+    env = dev-env
+    char = utf8
+    vault = PLEX/test
+    name = Dru
+    role = DevOps-Engineer
+    certified = True
